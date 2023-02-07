@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-image: url("Imagens/fundo.png");
+}
+.container{
+    width: 900px;
+    margin: 10px;
+}
+
+nav ul {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li {
+    list-style-type: none;  
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #000;
+    
+}
+header ul li a{
+    color: #4b566a;
+    font-weight: bold;
+}
+section{
+    
+    background-color: #e8e8d9;   
+}
+.content{
+    padding: 25px 10px;
+    
+}
+.content p{
+    font-size: 1.1em;
+    padding: 10px 0;
+}
+.content h1{
+    font-size: 1.3em;
+    color: #888874;
+}
+.content img{
+    border: 5px solid #888874;
+}
+footer{
+    
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+/** mobile **/
+
+@media (max-width:920px) {
+    
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    header img{
+        width: 100%;
+    }
+    p{
+        text-align: justify;
+    }
+}
+@media (max-width:700px) {
+    img{
+        width: 97%;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+    nav ul li {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
